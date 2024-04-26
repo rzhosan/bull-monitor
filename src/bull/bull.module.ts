@@ -41,6 +41,6 @@ import { BullMQMetricsFactory } from './bullmq-metrics.factory';
 })
 export class BullModule implements NestModule {
   configure(consumer: MiddlewareConsumer): MiddlewareConsumer | void {
-    consumer.apply(BullDashboardMiddleware).forRoutes('queues');
+    consumer.apply(BullDashboardMiddleware).forRoutes('');
   }
 }

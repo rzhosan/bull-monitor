@@ -15,7 +15,7 @@ export class BullBoardUi implements IBullUi {
     private readonly configService: ConfigService,
   ) {
     this._ui = new ExpressAdapter();
-    this._ui.setBasePath('/queues');
+    this._ui.setBasePath('');
 
     this._board = createBullBoard({ queues: [], serverAdapter: this._ui });
   }
